@@ -347,6 +347,7 @@ footer {
     background-color: var(--cor3);
     color: var(--cor0);
     text-align: center;
+    padding: 20px;
 }
 
 /*------------------MOBILE------------------*/
