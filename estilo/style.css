@@ -1,0 +1,402 @@
+/*------------------RESET E GERAL------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --cor0: white;
+    --cor1: #F7F7F7;
+    --cor2: #66D9EB;
+    --cor3: #2C70FF;
+    --cor4: #122AB2;
+    --cor5: #AE81FF;
+    --cor6: #F9265E;
+    --cor7: #66D9EB;
+    --cor8:#7C7C7C;  
+    --cor9: #222222;
+    --cor10: #A4A4A4;
+}
+
+/*------------------BARRA SUPERIOR------------------*/
+
+.sup {
+    background-color: var(--cor4);
+    
+}
+
+.sup .container-sup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--cor0);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.sup p, .sup a {
+    color: var(--cor0);
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*------------------HEADER------------------*/
+
+header {
+    background-color: var(--cor3);
+}
+
+header .container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--cor0);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 15px 15px 15px 10px;
+}
+
+header ul {
+    display: flex;
+    font-size: 20px;
+}
+
+header a {
+    color: var(--cor0);
+    padding: 10px;
+}
+
+/*------------------MAIN------------------*/
+
+.container-main {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.container-main h1 {
+    font-size: 48px;
+    padding: 0 10px;
+    line-height: 48px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: var(--cor9);
+}
+
+hr {
+    background-color: var(--cor3);
+    height: 3px;
+}
+
+.container-main h2 {
+    font-size: 48px;
+    padding: 0 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: var(--cor9);
+}
+
+.sobre {
+    display: flex;
+    color: var(--cor8);
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2;
+}
+
+.sobre p {
+    margin: 20px 10px;
+}
+
+.sobre picture {
+
+}
+.sobre img {
+    max-width: 100%;
+    display: block;
+    margin: 76px 10px;
+}
+
+.fotos-produtos {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 50px;
+    flex-wrap: wrap;
+}
+
+.fotos-produtos .prod {
+    margin: 10px;
+    background-color: var(--cor1);
+    text-align: center;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.fotos-produtos img {
+    max-width: 100%;
+}
+
+.fotos-produtos h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--cor10);
+    padding: 48px 10px
+}
+
+.fotos-produtos .prod-1 {
+    border-top: 8px solid var(--cor5);
+}
+
+.fotos-produtos .prod-2 {
+    border-top: 8px solid var(--cor6);
+}
+
+.fotos-produtos .prod-3 {
+    border-top: 8px solid var(--cor7);
+}
+
+.preco {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: center; 
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.material {
+    border: 4px solid white;
+    text-align: center;
+    padding: 48px;
+    align-self: flex-end;
+    margin: 60px 10px;
+    flex: 1;
+}
+
+.material:first-child {
+    margin-left: 50px;
+}
+.material:last-child {
+    margin-right: 50px;
+}
+
+.preco h3 {
+    font-size: 48px;
+    color: var(--cor10);
+    margin-bottom: 20px;
+}
+
+.preco h4 {
+    font-size: 48px;
+    color: var(--cor9);
+}
+.preco sup {
+    font-size: 24px;
+}
+
+.preco h4::before, .preco h4::after {
+    content: "";
+    border: 2px solid white;
+    display: block;
+}
+
+.preco ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+
+
+.preco li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco li::after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    background-color: var(--cor3);
+    border-radius: 50%;
+    display: block;
+}
+
+
+
+.preco a {
+    border: 4px solid var(--cor9);
+    font-size: 36px;
+    color: var(--cor9);
+    font-weight: 700;
+    padding: 10px;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    max-width: 960px;
+}
+
+.beneficios h2 {
+    font-size: 36px;
+    color: var(--cor10);
+    padding: 0;
+}
+
+.ben {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.beneficios h2::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background-color: var(--cor4);
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.beneficios .ben:nth-child(3n+1) h2::before {
+    background-color: var(--cor5);
+}
+
+.beneficios .ben:nth-child(3n+2) h2::before {
+    background-color: var(--cor6);
+}
+
+.beneficios .ben:nth-child(3n+3) h2::before {
+    background-color: var(--cor7);
+}
+
+.news {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px calc((100% - 960px)/2);
+    background-color: var(--cor1);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-info {
+    padding-left: 10px;
+}
+
+.news h2 {
+    font-size: 48px;
+    color: var(--cor10);
+}
+
+.news p {
+    color: var(--cor10);
+    font-style: italic;
+}
+
+.formulario {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.formulario input {
+    font-style: italic;
+    color: var(--cor9);
+    border: 4px solid var(--cor3);
+}
+
+.formulario button {
+    background-color: var(--cor3);
+    border: 4px solid var(--cor3);
+    color: var(--cor0);
+    font-size: 20x;
+    cursor: pointer;
+}
+
+input {
+    flex: 3 1 200px;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: var(--cor0);
+    text-align: center;
+}
+
+/*------------------MOBILE------------------*/
+
+@media(max-width:700px) {
+    
+    .sobre img {
+        margin: 20px;
+    }
+}
+
+@media(max-width:480px) {
+    .sup-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-header {
+        flex-direction: column;
+        justify-content: center;        
+        text-align: center;
+    }
+    
+    header nav {
+        align-self: stretch;
+        justify-content: center;
+        background-color: var(--cor2);
+    }
+
+    header ul {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    header li {
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid var(--cor0);
+    }
+    
+    header nav a {
+        color: var(--cor4);
+        font-weight: bold;
+    }
+    
+    .container-main h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    
+}
+    
